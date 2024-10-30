@@ -1,0 +1,16 @@
+@startuml
+class Car {
+    +String make
+    +String model
+    +int year
+    +void start()
+    +void stop()
+}
+
+class Engine {
+    +int horsepower
+    +void rev()
+}
+
+Car --|> Engine
+@enduml
