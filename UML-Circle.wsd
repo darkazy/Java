@@ -1,0 +1,35 @@
+                                +--------------------+
+                                | GeometricObject    |
+                                +--------------------+
+                                | - color: String    |
+                                | - filled: boolean  |
+                                +--------------------+
+                                | + GeometricObject()                    |
+                                | + GeometricObject(color: String, filled: boolean) |
+                                | + getColor(): String                  |
+                                | + setColor(color: String): void       |
+                                | + isFilled(): boolean                 |
+                                | + setFilled(filled: boolean): void    |
+                                | + getArea(): double {abstract}        |
+                                | + getPerimeter(): double {abstract}   |
+                                +--------------------+
+                                         ^
+                                         |
+                                         |
+                          +--------------+-------------+
+                          |             Circle         |
+                          +----------------------------+
+                          | - radius: double           |
+                          +----------------------------+
+                          | + Circle()                                 |
+                          | + Circle(radius: double)                   |
+                          | + Circle(radius: double, color: String, filled: boolean) |
+                          | + getRadius(): double                      |
+                          | + setRadius(radius: double): void          |
+                          | + getArea(): double                        |
+                          | + getPerimeter(): double                   |
+                          | + compareTo(other: Circle): int            |
+                          | + equals(obj: Object): boolean             |
+                          | + main(args: String[]): void               |
+                          +----------------------------+
+                          Implements Comparable<Circle>
